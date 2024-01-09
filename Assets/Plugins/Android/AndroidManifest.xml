@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" android:installLocation="preferExternal" package="com.ByteDance.TestJan01" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <application android:extractNativeLibs="true" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:requestLegacyExternalStorage="true">
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerActivity" android:resizeableActivity="false" android:screenOrientation="landscape" android:theme="@style/UnityThemeSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+		<meta-data android:name="pico_advance_interface" android:value="0"/>
+    </application>
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+</manifest>
